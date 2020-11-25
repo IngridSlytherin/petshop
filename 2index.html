@@ -1,0 +1,671 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Pet Shop</title>
+	<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	</script>
+	<!----webfonts---->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<!----//webfonts---->
+	<link href="css/theme.css" rel='stylesheet' type='text/css' />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!--start slider -->
+	<link rel="stylesheet" href="css/fwslider.css" media="all">
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+	<script src="js/fwslider.js"></script>
+	<!--end slider -->
+	<!--  jquery plguin -->
+	<script src="js/login.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+
+	<!--scroll-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!--//scroll-->
+	<!-- Add fancyBox light-box -->
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup1.css">
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+		});
+	</script>
+	<!-- //End fancyBox light-box -->
+</head>
+
+<body>
+	<!-- start magnific-->
+	<div id="small-dialog1" class="mfp-hide">
+		<div class="pop_up">
+			<iframe src="//player.vimeo.com/video/70332985?title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="100%"
+				height="260" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<p><a href="http://vimeo.com/70332985">Reed</a> from <a href="http://vimeo.com/dorianwarneck">Dorian
+					Warneck</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+		</div>
+	</div>
+	<!-- end magnific-->
+
+	<!----start-container----->
+	<div class="header-bg" id="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="logo">
+						<h1><a href="index.html">Pet Shop</a></h1>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="h_right">
+						<div class="left">
+							<ul class="menu list-unstyled">
+								<li class="active"><a href="#home" class="scroll">Inicio</a></li>
+								<li><a href="#features" class="scroll">Serviços</a></li>
+								<li><a href="#prices" class="scroll">Preços</a></li>
+								<li><a href="#faq" class="scroll">Quem Somos</a></li>
+								<li><a href="#support" class="scroll">Suporte</a></li>
+
+							</ul>
+						</div>
+						<div class="right">
+							<ul class="menu list-unstyled">
+								<li class="login">
+									<div class="log_box">
+										<div id="loginContainer">
+											<a href="#" id="loginButton" class=""><span>LOGIN</span></a>
+											<div id="loginBox" style="display: none;">
+												<form id="loginForm">
+													<fieldset id="body">
+														<fieldset>
+															<input type="text" name="email" id="email" value="Username"
+																onfocus="this.value = '';"
+																onblur="if (this.value == '') {this.value = 'Username';}">
+															<input type="password" class="textbox" value="password"
+																onfocus="this.value = '';"
+																onblur="if (this.value == '') {this.value = 'password';}">
+														</fieldset>
+														<input type="submit" id="log" value="Sign in">
+														<label for="checkbox"><i><a href="">Lost Password
+																	?</a></i></label>
+														<label for="checkbox"><i><a href="cadastro.html">Cadastrar-se
+																	?</a></i>
+													</fieldset>
+												</form>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									<!-- end_login_box -->
+								</li>
+							</ul>
+						</div>
+						<!-- start login_box -->
+
+
+						<!-- start smart_nav * -->
+						<nav class="nav">
+							<ul class="nav-list">
+								<li class="nav-item"><a href="#home">Inicio</a></li>
+								<!--     <li class="nav-item"><a href="#features" class="scroll">Features</a></li> -->
+								<li class="nav-item"><a href="#prices" class="scroll">Preços</a></li>
+								<li class="nav-item"><a href="#faq" class="scroll">Quem Somos</a></li>
+								<li class="nav-item"><a href="#support" class="scroll">Suporte</a></li>
+								<div class="clearfix"></div>
+							</ul>
+
+							<div class="nav-mobile"></div>
+						</nav>
+
+						<script type="text/javascript" src="js/responsive.menu.js"></script>
+						<!-- end smart_nav * -->
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!----start-images-slider---->
+	<div class="images-slider">
+		<!-- start slider -->
+		<div id="fwslider">
+			<div class="slider_container">
+				<div class="slide">
+					<!-- Slide image -->
+					<img src="images/banner.jpg" height="600" width="300" alt="logo" />
+					<!-- /Slide image -->
+					<!-- Texts container -->
+					<div class="slide_content">
+						<div class="slide_content_wrap">
+
+
+							<!-- /Text description -->
+							<div class="slide-btns description">
+							</div>
+
+
+
+
+
+							<!-- /Texts container -->
+						</div>
+						<!-- /Duplicate to create more slides -->
+						<div class="slide">
+							<img src="images/banner.jpg" alt="cachorro" />
+							<!-- <div class="slide_content">
+		                    <div class="slide_content_wrap">
+		                        <!-- Text title 
+		                        <h4 class="title">To Protect your freedom</h4>	                      
+		                       <h4 class="title">and privecy on the internet</h4>
+		                        <!-- /Text description 
+		                        <div class="slide-btns description">	                      
+		                        </div> -->
+
+							<!-- start magnific-->
+							<!-- <div id="small-dialog1" class="mfp-hide">
+										<div class="pop_up">
+										 	<iframe src="//player.vimeo.com/video/70332985?title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="100%" height="260" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/70332985">Reed</a> from <a href="http://vimeo.com/dorianwarneck">Dorian Warneck</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+							  			</div>
+									</div>
+                                    
+									<!-- end magnific-->
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/slide -->
+			<!-- </div>
+		        <div class="timers"> </div>
+		        <div class="slidePrev"><span> </span></div>
+		        <div class="slideNext"><span> </span></div>
+		    </div> -->
+			<!--/slider -->
+		</div>
+
+		<!--- features--->
+		<div class="container">
+			<div class="row">
+				<div class="content-feature-grids" id="features">
+					<h3> Seriços</h3>
+					<p>Conheça nossos serviços para seu pet.</p>
+					<div class="col-md-6">
+						<div class="feature-grid">
+							<div class="feature-grid-left icon1">
+								<span> </span>
+							</div>
+							<div class="feature-grid-right">
+								<h2>Tosas</h2>
+								<p>É necessário agendar com uma hora de antecedencia. As todas são realizadas de segunda
+									a sabádo</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="feature-grid">
+							<div class="feature-grid-left icon2">
+								<span> </span>
+							</div>
+							<div class="feature-grid-right">
+								<h2>Delivery</h2>
+								<p>Buscamos e entregamos os pets em suas casas (por um preço adicional).</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="feature-grid">
+							<div class="feature-grid-left icon3">
+								<span> </span>
+							</div>
+							<div class="feature-grid-right">
+								<h2>Veterinario 24hr</h2>
+								<p>Temos profissionais de plantão 24hr por dia para atender seu pet, só atendemos dentro
+									da Região de São Paulo.</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="feature-grid">
+							<div class="feature-grid-left icon4">
+								<span> </span>
+							</div>
+							<div class="feature-grid-right">
+								<h2>Saiba quando estiver pronto.</h2>
+								<p>Mantemos contato com os donos do pet para que ele saiba quando os serviços estiverem
+									terminado.</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="feature-grid">
+							<div class="feature-grid-left icon5">
+								<span> </span>
+							</div>
+							<div class="feature-grid-right">
+								<h2>Ração</h2>
+								<p>Só entregamos a domicilio compras de ração maior ou igual a 10Kg.</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="feature-grid">
+							<div class="feature-grid-left icon6">
+								<span> </span>
+							</div>
+							<div class="feature-grid-right">
+								<h2>Pet Saudavel</h2>
+								<p>Nosso alimentos do Pet Saúdavel são 100% , mas antes da compra é importante conversar
+									com o nutricionsta.</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!-----------start-pricing----------->
+		<div class="pricing-plans" id="prices">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Nossos Preços</h3>
+						<p>Confira os preços dos produtos para o seu bolso</p>
+						<div class="pricing-grids">
+							<div class="pricing-grid">
+								<div class="price-value">
+									<a href="#">Tosa Para Cachorros</a>
+								</div>
+								<h4><a href="#">R$60,00</a></h4>
+								<ul class="list-unstyled">
+									<li><a href="#">Tosa 1 </a></li>
+									<li><a href="#">Tosa 1 </a></li>
+									<li><a href="#">Tosa 1 </a></li>
+									<li><a href="#">Tosa 1 </a></li>
+									<li><a href="#">Tosa 1 </a></li>
+									<li><a href="#">Tosa 1 </a></li>
+								</ul>
+								<div class="cart">
+									<div class="span3"><a class="popup-with-zoom-anim"
+											href="#small-dialog"><i>Compre</i></a>
+									</div>
+								</div>
+							</div>
+							<div class="pricing-grid">
+								<div class="price-value">
+									<a href="#">Banho</a>
+								</div>
+								<h4><a href="#">R$40,00</a></h4>
+								<ul class="list-unstyled">
+									<li><a href="#">Banho 1 </a></li>
+									<li><a href="#">Banho 1 </a></li>
+									<li><a href="#">Banho 1 </a></li>
+									<li><a href="#">Banho 1 </a><a href="#">Banho 1 </a></li>
+									<li><a href="#">Banho 1 </a></li>
+								</ul>
+								<div class="cart">
+									<div class="span3"><a class="popup-with-zoom-anim"
+											href="#small-dialog"><i>Compre</i></a>
+									</div>
+								</div>
+							</div>
+							<div class="pricing-grid">
+								<div class="price-value">
+									<a href="#">Veterinario</a>
+								</div>
+								<h4><a href="#">A partir de R$80,00</a></h4>
+								<ul class="list-unstyled">
+									<li><a href="#">Consuta </a></li>
+									<li><a href="#">Exame </a></li>
+									<li><a href="#">Vacinação </a></li>
+									<li><a href="#">Tratamento</a></li>
+									<li><a href="#">Cirurgia</a><a href="#">Sacrificio</a></li>
+								</ul>
+								<div class="cart">
+									<div class="span3"><a class="popup-with-zoom-anim"
+											href="#small-dialog"><i>Compre</i></a>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+
+							<div class="pricing-grids">
+								<div class="pricing-grid1">
+									<div class="price-value">
+										<a href="#">Ração</a>
+									</div>
+									<h4><a href="#">R$--,--</a></h4>
+									<ul class="list-unstyled">
+										<li><a href="#">Pedigree</a></li>
+										<li><a href="#">Purina One</a></li>
+										<li><a href="#">Whiskas</a></li>
+										<li><a href="#">Max</a></li>
+										<li><a href="#">Para todos porte</a></li>
+										<li><a href="#">Por idade</a></li>
+									</ul>
+									<div class="cart1">
+										<div class="span3"><a class="popup-with-zoom-anim" href="#small-dialog">
+												<i>Na Loja</i></a>
+										</div>
+									</div>
+								</div>
+								<div class="pricing-grid1">
+									<div class="price-value">
+										<a href="#">Brinquedos</a>
+									</div>
+									<h4><a href="#">R$00,00</a></h4>
+									<ul class="list-unstyled">
+										<li><a href="#">Osso</a></li>
+										<li><a href="#">Mastigavel</a></li>
+										<li><a href="#">Chacoalho</a></li>
+										<li><a href="#">Para Gatos</a></li>
+										<li><a href="#">Para Cachorros</a></li>
+										<li><a href="#">Outros animais</a></li>
+									</ul>
+									<div class="cart1">
+										<div class="span3"><a class="popup-with-zoom-anim" href="#small-dialog">
+												<i>Na Loja</i></a>
+										</div>
+									</div>
+								</div>
+								<div class="pricing-grid1">
+									<div class="price-value">
+										<a href="#">Acessórios</a>
+									</div>
+									<h4><a href="#">R$00,00</a></h4>
+									<ul class="list-unstyled">
+										<li><a href="#">Coleiras</a></li>
+										<li><a href="#">Casinhas</a></li>
+										<li><a href="#">Potes</a></li>
+										<li><a href="#">Caminha</a></li>
+										<li><a href="#">Roupas</a></li>
+										<li><a href="#">Manta</a></li>
+									</ul>
+									<div class="cart1">
+										<div class="span3"><a class="popup-with-zoom-anim" href="#small-dialog">
+												<i>Na Loja</i></a>
+										</div>
+									</div>
+								</div>
+								<div class="pricing-grid1">
+									<div class="price-value">
+										<a href="#">Pet Saudavel</a>
+									</div>
+									<h4><a href="#">R$00,00</a></h4>
+									<ul class="list-unstyled">
+										<li><a href="#">Lorem ipsum</a></li>
+										<li><a href="#">Dolor sitamet, Consect</a></li>
+										<li><a href="#">Adipiscing elit</a></li>
+										<li><a href="#">Proin commodo turips</a></li>
+										<li><a href="#">Laws pulvinarvel</a></li>
+										<li><a href="#">Prnare nisi pretium</a></li>
+									</ul>
+									<div class="cart1">
+										<div class="span3"><a class="popup-with-zoom-anim" href="#small-dialog">
+												<i>Na Loja</i></a>
+										</div>
+									</div>
+								</div>
+								<!-----pop-up-grid---->
+								<div id="small-dialog" class="mfp-hide">
+									<div class="pop_up">
+										<div class="payment-online-form-left">
+											<form>
+												<h4><span class="shipping"> </span>Continuar Agendamento</h4>
+												<ul class="list-unstyled">
+													<li><input class="text-box-dark" type="text" value="Frist Name"
+															onfocus="this.value = '';"
+															onblur="if (this.value == '') {this.value = 'Frist Name';}">
+													</li>
+													<li><input class="text-box-dark" type="text" value="Last Name"
+															onfocus="this.value = '';"
+															onblur="if (this.value == '') {this.value = 'Last Name';}">
+													</li>
+												</ul>
+												<ul class="list-unstyled">
+													<li><input class="text-box-dark" type="text" value="Email"
+															onfocus="this.value = '';"
+															onblur="if (this.value == '') {this.value = 'Email';}"></li>
+													<li><input class="text-box-dark" type="text" value="Dog Name"
+															onfocus="this.value = '';"
+															onblur="if (this.value == '') {this.value = 'Company Name';}">
+													</li>
+												</ul>
+												<ul class="list-unstyled">
+													<li><input class="text-box-dark" type="text" value="Phone"
+															onfocus="this.value = '';"
+															onblur="if (this.value == '') {this.value = 'Phone';}"></li>
+													<li><input class="text-box-dark" type="text" value="Address"
+															onfocus="this.value = '';"
+															onblur="if (this.value == '') {this.value = 'Address';}">
+													</li>
+													<div class="clearfix"></div>
+												</ul>
+												<div class="clearfix"></div>
+												<ul class="payment-type list-unstyled">
+													<h4><span class="payment"> </span> Pagamentos</h4>
+													<li><span class="col_checkbox">
+															<input id="3" class="css-checkbox1" type="checkbox">
+															<label for="3" name="demo_lbl_1" class="css-label1">
+															</label>
+															<a class="visa" href="#"> </a>
+														</span>
+
+													</li>
+													<li>
+														<span class="col_checkbox">
+															<input id="4" class="css-checkbox2" type="checkbox">
+															<label for="4" name="demo_lbl_2" class="css-label2">
+															</label>
+															<a class="paypal" href="#"> </a>
+														</span>
+													</li>
+													<div class="clearfix"></div>
+												</ul>
+												<ul class="list-unstyled">
+													<li><input class="text-box-dark" type="text" value="Card Number"
+															onfocus="this.value = '';"
+															onblur="if (this.value == '') {this.value = 'Card Number';}">
+													</li>
+													<li><input class="text-box-dark" type="text" value="Name on card"
+															onfocus="this.value = '';"
+															onblur="if (this.value == '') {this.value = 'Name on card';}">
+													</li>
+													<div class="clearfix"></div>
+												</ul>
+												<ul class="list-unstyled">
+													<li><input class="text-box-light hasDatepicker" type="text"
+															id="datepicker" value="Expiration Date"
+															onfocus="this.value = '';"
+															onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em
+															class="pay-date"> </em></li>
+													<li><input class="text-box-dark" type="text" value="Security Code"
+															onfocus="this.value = '';"
+															onblur="if (this.value == '') {this.value = 'Security Code';}">
+													</li>
+													<div class="clearfix"></div>
+												</ul class="list-unstyled">
+												<ul class="payment-sendbtns">
+													<li><input type="reset" value="Cancel"></li>
+													<li><input type="submit" value="Confirmar"></li>
+												</ul>
+												<div class="clearfix"></div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<!-----pop-up-grid---->
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--- faq--->
+		<div class="container">
+			<div class="row">
+				<div class="content-feature-grids" id="faq">
+					<h3> Quem somos </h3>
+					<p>Nos conheça </p>
+					<div class="col-md-6">
+						<div class="faq-grid">
+							<h5>1. Pet shop:</h5>
+							<p>Nós procuramos proporcionar o melhor para seu cachorro para que ele possa ter uma vida
+								longa e sauldavel e consiga viver da melhor forrma.</p>
+						</div>
+						<div class="faq-grid">
+							<h5>2. Veterinario</h5>
+							<p>Trabalhos com pessoas qualificadas para que atenda seu pet 24hr por dia com consulta à
+								domicilio.</p>
+						</div>
+						<div class="faq-grid">
+							<h5>3. Traballhos com as melhores marcas do mercado</h5>
+							<p>Trabalhamos com as melhores marcas do mercado para que seu pet e você se sintam bem ao
+								confiar no nosso trabaho.</p>
+						</div>
+						<div class="faq-grid">
+							<h5>4. Tosa e banho</h5>
+							<p>Trabalhos com pessoas qualificadas para tratar bem todas as raças de pet que entrarem no
+								estabelicimento.</p>
+						</div>
+						<div class="faq-grid">
+							<h5>5. Pet Saúdavel</h5>
+							<p>Profissionais qualificados para que o seu pet possa ter uma alimentação saudavél sem que
+								seja apenas com ração, nutricionistas iram escolher a melhor comida para seu pet.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-grid">
+							<h5>6. Acessórios</h5>
+							<p>Vendemos todos os tipos de acessórios para o entretenimento do seu bichinho e para que as
+								atividades diarias dos seu animais. </p>
+						</div>
+						<div class="faq-grid">
+							<h5>7. Petiscos</h5>
+							<p>Temos petiso de todas as marcas para acrescentar uma boa alimentação para o sue animal de
+								estimação</p>
+						</div>
+						<div class="faq-grid">
+							<h5>8. Vacinação</h5>
+							<p>Temos varios tipos de vacinação para a saúde do seu pet. Cada vacina tem um preço. Para
+								informações desse tipo importante entrar em contato.</p>
+						</div>
+						<div class="faq-grid">
+							<h5>9. Não vendemos vacina</h5>
+							<p>Não vendemos vacina, somente os veterinarios podem aplicar e por esse motivos não
+								vendemos a vacina para donos de pet.</p>
+						</div>
+						<div class="faq-grid">
+							<h5>10. Duvidas?</h5>
+							<p>Ainda ficaram dúvidas sobre o nosso pet shop? Entre em contato com a gente através de
+								email ou telefone, abaixo.</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="contact s6" id="support">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="contact-left">
+							<h3>Entre em Contato</h3>
+							<p class="style">Se ficaram com dúvidas sobre nossos serviços pode entrar em contado. Marque
+								uma tosa, consulta com veterinario ou banho com a gente por telefone também, atendemos
+								de segunda a segunda. (Exeto banho e tosa)</p>
+							<div class="get-intouch-left-address">
+								<p>1234 Rua Pet</p>
+								<p>Loja 10</p>
+								<p>Dentro do Shoping Pet</p>
+								<p class="style1">Email: <a href="mailto:info@mycompany.com">
+										friendspetshop@gmail.com</a></p>
+								<p class="style2">Telefone: (11)95336-9820</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="contact-right">
+							<div class="form">
+								<form method="post" action="#">
+									<input type="text" class="textbox" value=" Name" onfocus="this.value = '';"
+										onblur="if (this.value == '') {this.value = 'Name';}">
+									<input type="text" class="textbox" value="Email" onfocus="this.value = '';"
+										onblur="if (this.value == '') {this.value = 'Email';}">
+									<div class="clearfix"></div>
+									<div>
+										<textarea value="Message:" onfocus="this.value = '';"
+											onblur="if (this.value == '') {this.value = ' Message';}">Mensagem</textarea>
+									</div>
+									<div class="span4">
+										<a href="#">
+											<i><input type="submit" value="Enviar"></i>
+											<div class="clearfix"></div>
+										</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copy-right">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function ($) {
+				$(".scroll").click(function (event) {
+					event.preventDefault();
+					$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+				});
+			});
+		</script>
+
+		<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+
+</html>
